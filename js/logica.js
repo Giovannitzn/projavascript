@@ -2,11 +2,10 @@
 function bienvenida() {
     let nombre = prompt("Para poder iniciar, Ingrese su nombre").toUpperCase();
     let apellido = prompt("Gracias, ahora su apellido:").toUpperCase();
-    let mensaje = `Hola ${nombre} ${apellido} bienvenido, a la tienda de la zapatilla DEPORTSHOES...`;
-    alert(mensaje);
-    //console.log(document)
-    document.querySelector('h1').textContent='Bienvenido a tu tienda DEPORTSHOES' 
-    console.log(document.querySelector('h1'))
+ //   let mensaje = `Hola ${nombre} ${apellido} bienvenido, a la tienda de la zapatilla DEPORTSHOES...`;
+ 
+    document.querySelector('h1').innerHTML = `<b>Bienvenido ${nombre} ${apellido} a tu tienda DEPORTSHOES</b>` 
+
 }
 
 const suedad = (numero) => {
@@ -50,6 +49,12 @@ if (edad>=18) {
         let zapatilla1 = new Zapatilla(marcaIn, modeloIn, precioIn, cantidadIn);
         
         alert("Haz seleccionado los siguientes productos Zapatilla modelo" + zapatilla1.modelo + " marca: " + zapatilla1.marca + " y tiene precio " + zapatilla1.precio);
+
+        const lista = document.getElementById('lista')
+        
+        const arrayelement= ['primero','segundo'] 
+
+
 
 } else {
     alert ("Entiendo que menor de edad, o no entendi tu edad...");
