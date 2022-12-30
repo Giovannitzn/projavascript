@@ -1,13 +1,19 @@
 
-let nombre = prompt("Para poder iniciar, Ingrese su nombre").toUpperCase();
-let apellido = prompt("Gracias, ahora su apellido:").toUpperCase();
-let edad = parseInt (prompt ("Por ultimo que edad tienes:"));
-let mensaje = `Hola ${nombre} ${apellido} bienvenido, a la tienda de la zapatilla ...`;
-
-if (edad>=18) {
-    let mensaje1 = `${nombre} sabemos que eres mayor de edad , puedes continuar ... `;
+function bienvenida() {
+    let nombre = prompt("Para poder iniciar, Ingrese su nombre").toUpperCase();
+    let apellido = prompt("Gracias, ahora su apellido:").toUpperCase();
+    let mensaje = `Hola ${nombre} ${apellido} bienvenido, a la tienda de la zapatilla DEPORTSHOES...`;
     alert(mensaje);
+    //console.log(document)
+    document.querySelector('h1').textContent='Bienvenido a tu tienda DEPORTSHOES' 
+    console.log(document.querySelector('h1'))
+}
+
+const suedad = (numero) => {
+if (edad>=18) {
+    let mensaje1 = `Usted es mayor de edad , puedes continuar ... `;
     alert(mensaje1);
+    
     let deporte = prompt("¿que tipo de deporte practicas?: tennis, basquet o quiza futbol?")
     while (deporte != null){
           switch (deporte) {
@@ -43,10 +49,16 @@ if (edad>=18) {
         
         let zapatilla1 = new Zapatilla(marcaIn, modeloIn, precioIn, cantidadIn);
         
-        alert("La zapatilla que estas buscando es del modelo " + zapatilla1.modelo + " marca: " + zapatilla1.marca + " y tiene precio " + zapatilla1.precio);
+        alert("Haz seleccionado los siguientes productos Zapatilla modelo" + zapatilla1.modelo + " marca: " + zapatilla1.marca + " y tiene precio " + zapatilla1.precio);
 
 } else {
     alert ("Entiendo que menor de edad, o no entendi tu edad...");
-}
+}}
+
+bienvenida();
+let edad = parseInt (prompt ("Cual es tu edad:"));
+suedad(edad);
 
 alert("Gracias por visitarnos, espero vuelvas pronto");
+
+
