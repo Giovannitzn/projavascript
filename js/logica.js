@@ -17,13 +17,13 @@ if (edad>=18) {
     while (deporte != null){
           switch (deporte) {
             case "tennis":
-            alert("Tenemos las zapatillas que quiza te interesen");
+            alert("Tenemos las zapatillas para las partidas dobles");
             break;
             case "basquet":
-                alert("En nuestra galeria encontraras las zapatillas mas comodas y livianas para correr");
+                alert("EN nuestras galerias se encuentran zapatillas para sus canastas");
             break;
             case "futbol":
-                alert("Con la variedad de modelos disfrutaras mejor de tu pasión y tus goles");
+                alert("Con la variedad de modelos disfrutaras mejor de tus goles");
                 break;
             default:
                 alert("Disculpa aun no tenemos productos");
