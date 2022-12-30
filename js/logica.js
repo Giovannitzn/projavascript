@@ -4,7 +4,7 @@ function bienvenida() {
     let apellido = prompt("Gracias, ahora su apellido:").toUpperCase();
  //   let mensaje = `Hola ${nombre} ${apellido} bienvenido, a la tienda de la zapatilla DEPORTSHOES...`;
  
-    document.querySelector('h1').innerHTML = `<b>Bienvenido ${nombre} ${apellido} a tu tienda DEPORTSHOES</b>` 
+    document.querySelector('h1').innerHTML = `<b>Bienvenido ${nombre} ${apellido} a tu DEPORTSHOES</b>` 
 
 }
 
@@ -48,11 +48,22 @@ if (edad>=18) {
         
         let zapatilla1 = new Zapatilla(marcaIn, modeloIn, precioIn, cantidadIn);
         
-        alert("Haz seleccionado los siguientes productos Zapatilla modelo" + zapatilla1.modelo + " marca: " + zapatilla1.marca + " y tiene precio " + zapatilla1.precio);
+        //alert("Haz seleccionado los siguientes productos Zapatilla modelo" + zapatilla1.modelo + " marca: " + zapatilla1.marca + " y tiene precio " + zapatilla1.precio);
 
         const lista = document.getElementById('lista')
         
-        const arrayelement= ['primero','segundo'] 
+        const arrayitem = ["Su selección fue: Zapatilla modelo " + zapatilla1.marca + "", "Zapatilla de Marca:  " + zapatilla1.modelo + "" ," Zapatilla con precio: " + zapatilla1.precio];
+
+        const fragment = document.createDocumentFragment()
+
+        arrayitem.forEach(item => {
+            const li = document.createElement('li')
+            li.textContent = item
+            fragment.appendChild(li)
+        })
+
+        lista.appendChild(fragment)
+
 
 
 
