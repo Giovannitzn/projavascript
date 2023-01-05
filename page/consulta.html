@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+ <link rel="stylesheet" href="../css/style.css">
+    <title>Consulta</title>
+</head>
+<body>
+
+
+    <section class="menu">
+        <nav class="navbar navbar-expand-lg navbar-ligth bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="../image/logo.jpg" alt="GiovanniTezen" width="40" height="34">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./registro.html">Registro</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./consulta.html">Consulta</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./producto.html">Producto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </section>
+
+    <h1>Dejanos saber un poco de ti</h1>
+
+    <section class="detalle">
+        <ul id="lista">
+      
+        </ul>
+      </section>
+<section class="consulta">
+    <form class="consultap">
+        <div class="col-md-4">
+            <label for="inputdeport" class="form-label">Deporte que practicas</label>
+            <select id="inputdeporte" class="form-select">
+            <option selected disabled value="">Choose...</option>
+            <option selected value="Basquet">Basquet</option>
+            <option selected value="Futbol">Futbol</option>
+            <option selected value="Tennis">Tennis</option>
+            </select>
+          </div>
+        <div class="col-md-4">
+            <label for="validationCustom10" class="form-label">Marca de interes</label>
+            <input type="text" class="form-control" id="validationCustom10" placeholder="Adidas" required>
+            <div class="valid-feedback">
+              Muy bien!
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom11" class="form-label">modelo de producto</label>
+            <input type="text" class="form-control" id="validationCustom11"  placeholder="ZX2000" required>
+            <div class="valid-feedback">
+              Perfecto!
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom12" class="form-label">Cuantos productos requiere</label>
+            <input type="text" class="form-control" id="validationCustom12"  placeholder="cantidad en numero" required>
+            <div class="valid-feedback">
+              Muy Bien!
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustom13" class="form-label">Su precio es</label>
+                <input type="text" class="form-control" id="validationCustom13"  placeholder="S/.00" required>
+                <div class="valid-feedback">
+                  Muy Bien!
+                </div>
+
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit" onclick="suedad(edad)">Solicitar</button>
+          </div>
+      </form>
+    </section>
+
+      <footer class="footer">
+        <h3>for by: Giovanni Tezen 2023</h3>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/logica2.js"></script>
+
+</body>
+</html>

@@ -1,5 +1,5 @@
 * {
-    background-color: rgb(59, 43, 117);
+    background-color: rgb(136, 192, 245);
     color: white
 
 }
@@ -14,4 +14,24 @@ h1 {
 }
 .contenido {
 margin: auto;
+}
+.registro{
+    background-color: rgb(192, 224, 238);
+    padding: 80px;
+
+}
+
+.consultap{
+    background-color: rgb(192, 224, 238);
+    padding: 50px;
+
+}
+.detalle{
+    padding: 40px;
+}
+
+.footer{
+    background-color: rgb(30, 30, 206);
+    width: auto;
+    padding : 20px;
 }
