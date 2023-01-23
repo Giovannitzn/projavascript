@@ -1,6 +1,6 @@
 const cGrid = document.querySelector('.cGrid')
 const tcarr = document.querySelector('.tcarr')
-const btnc = document.querySelector('comprart')
+const btnc = document.querySelector('.comprart')
 
 try {
     fetch('/prod.json')
