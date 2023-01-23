@@ -93,7 +93,7 @@ try {
     console.log(e);
 }
 
-/* btnc.addEventListener('click', (e) => {
+btnc.addEventListener('click', (e) => {
     const trjs = document.querySelectorAll('.trjs')
 
     if (trjs.length == 0) {
@@ -104,4 +104,4 @@ try {
         })
         alert('Compra exitosa')
     } 
-})*/
+})
