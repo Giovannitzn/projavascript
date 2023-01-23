@@ -1,0 +1,28 @@
+[
+    {
+        "nombre": "Reebok",
+        "precio": "92.00",
+        "image": "../image/zapatilla1.jpg"
+    },
+    {
+        "nombre": "SuperStar",
+        "precio": "80.00",
+        "image": "../image/zapatilla2.jpg"
+    },
+    {
+        "nombre": "Adidas",
+        "precio": "75.00",
+        "image": "../image/zapatilla3.jpg"
+    },
+    {
+        "nombre": "Skechers",
+        "precio": "90.00",
+        "image": "../image/zapatilla4.jpg"
+    },
+    {
+        "nombre": "Nike",
+        "precio": "95.00",
+        "image": "../image/zapatilla5.jpg"
+    }
+
+]

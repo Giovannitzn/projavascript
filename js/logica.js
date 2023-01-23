@@ -2,7 +2,7 @@
 function bienvenida() {
     let nombre = prompt("Para poder iniciar, Ingrese su nombre").toUpperCase();
     let apellido = prompt("Gracias, ahora su apellido:").toUpperCase();
- //   let mensaje = `Hola ${nombre} ${apellido} bienvenido, a la tienda de la zapatilla DEPORTSHOES...`;
+
  
     document.querySelector('h1').innerHTML = `<b>Bienvenido ${nombre} ${apellido} a tu DEPORTSHOES</b>` 
 
@@ -43,16 +43,14 @@ if (edad>=18) {
             this.modelo = modelo;
             this.precio = precio;
             this.cantidad = cantidad;
-        }
+             }
         }
         
         let zapatilla1 = new Zapatilla(marcaIn, modeloIn, precioIn, cantidadIn);
         
-        //alert("Haz seleccionado los siguientes productos Zapatilla modelo" + zapatilla1.modelo + " marca: " + zapatilla1.marca + " y tiene precio " + zapatilla1.precio);
-
         const lista = document.getElementById('lista')
         
-        const arrayitem = ["Su selección fue: Zapatilla modelo " + zapatilla1.marca + "", "Zapatilla de Marca:  " + zapatilla1.modelo + "" ," Zapatilla con precio: " + zapatilla1.precio];
+        const arrayitem = ["Seleccionaste Zapatilla marca " + zapatilla1.marca + "", "Modelo:  " + zapatilla1.modelo  + "" ," Zapatilla con precio: " + zapatilla1.precio];
 
         const fragment = document.createDocumentFragment()
 

@@ -3,10 +3,16 @@ function bienvenida() {
         let apellido = document.getElementById('validationCustom02').value;
        document.querySelector('h1').innerHTML = `<b>Bienvenido ${nombre} ${apellido} a tu DEPORTSHOES</b>` 
 
-       Swal.fire(
-        'Buen Trabajo!',
-        'Puedes ingresar a la seccion de consultas',
-        'success'
-      )
+       Swal.fire({
+        title: 'Gracias por su registro',
+        footer: '<a href="./carrito.html">Catalogo para tus pedidos</a>',
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
+
+      })
    
    }

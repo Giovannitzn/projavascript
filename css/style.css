@@ -1,6 +1,8 @@
 * {
-    background-color: rgb(136, 192, 245);
-    color: white
+    margin: 0;
+    padding: 0;
+    background-color: rgb(66, 141, 211);
+    color: rgb(202, 230, 235)
 
 }
 .carrusel {
@@ -9,14 +11,25 @@
     align-content: center;
 
 }
-h1 {
+h1, h2, h3, h4, p, a, input {
+    margin: 0;
+    padding: 0;
     tab-size: 30px;
+}
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration-style:dashed;
+    text-decoration-color: brown;
+    color: chocolate;
 }
 .contenido {
 margin: auto;
 }
 .registro{
-    background-color: rgb(192, 224, 238);
+    background-color: rgb(107, 182, 214);
     padding: 80px;
 
 }
@@ -31,7 +44,7 @@ margin: auto;
 }
 
 .footer{
-    background-color: rgb(30, 30, 206);
+    background-color: rgb(103, 103, 146);
     width: auto;
-    padding : 20px;
+    padding : 5px;
 }
