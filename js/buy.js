@@ -3,7 +3,7 @@ const tcarr = document.querySelector('.tcarr')
 const btnc = document.querySelector('comprart')
 
 try {
-    fetch('../prod.json')
+    fetch('/prod.json')
 .then(respuesta => {
     return respuesta.json() 
 })
